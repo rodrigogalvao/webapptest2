@@ -7,7 +7,7 @@ const client = redis.createClient({
   host: 'redis',
   port: 6379
 });
-
+#teste
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
