@@ -19,65 +19,7 @@ app.get('/', (req, res) => {
       <style>
         body {
           background-color: #f2f2f2;
-        }
-        h1 {
-          text-align: center;
-          margin-top: 50px;
-          color: #ffa500;
-          font-size: 48px;
-          font-weight: bold;
-        }
-        .container {
-          max-width: 600px;
-          margin: 0 auto;
-          background-color: #ffffff;
-          padding: 50px;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-          color: #ffa500;
-          font-weight: bold;
-        }
-        input {
-          border-radius: 10px;
-          border: none;
-          padding: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          margin-bottom: 20px;
-        }
-        .btn-primary {
-          background-color: #ffa500;
-          border-color: #ffa500;
-          border-radius: 10px;
-          font-weight: bold;
-          width: 100%;
-          margin-top: 20px;
-        }
-        .btn-primary:hover {
-          background-color: #008000;
-          border-color: #008000;
-        }
-        .image-container {
-          text-align: center;
-          margin-bottom: 50px;
-        }
-        .image-container img {
-          max-width: 150px;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <div class="image-container">
-        </div>
-        <h1>Formulário</h1>
-        <form action="/" method="post">
-          <div class="form-group">
-            <label for="inputNome">Nome:</label>
-            <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Digite seu nome">
-          </div>
-          <div class="form-group">
+       
             <label for="inputSobrenome">Sobrenome:</label>
             <input type="text" class="form-control" id="inputSobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
           </div>
