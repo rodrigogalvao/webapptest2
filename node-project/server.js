@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   <!DOCTYPE html>
   <html>
     <head>
-      <title>Formuláriooooooooo</title>
+      <title>Formulário</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <style>
         body {
@@ -71,7 +71,7 @@ app.get('/', (req, res) => {
       <div class="container">
         <div class="image-container">
         </div>
-        <h1>Formulário</h1>
+        <h1>Formuláriooooo</h1>
         <form action="/" method="post">
           <div class="form-group">
             <label for="inputNome">Nome:</label>
