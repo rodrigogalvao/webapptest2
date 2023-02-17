@@ -71,7 +71,7 @@ app.get('/', (req, res) => {
       <div class="container">
         <div class="image-container">
         </div>
-        <h1>Formuláriooooo</h1>
+        <h1>Formulário</h1>
         <form action="/" method="post">
           <div class="form-group">
             <label for="inputNome">Nome:</label>
@@ -98,7 +98,7 @@ app.post('/', (req, res) => {
       return res.send('Ocorreu um erro ao armazenar os dados.');
     }
     console.log(`Nome ${nome} ${sobrenome} armazenado com sucesso.`);
-    res.send('Dados armazenados com sucesso!');
+    res.send('Dados armazenados com sucesso!!!!!!!!!!!!!');
   });
 });
 
