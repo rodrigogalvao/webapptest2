@@ -13,6 +13,28 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.send(`
   
+        label {
+          color: #ffa500;
+          font-weight: bold;
+        }
+        input {
+          border-radius: 10px;
+          border: none;
+          padding: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+        .btn-primary {
+          background-color: #ffa500;
+          border-color: #ffa500;
+          border-radius: 10px;
+          font-weight: bold;
+          width: 100%;
+          margin-top: 20px;
+        }
+        .btn-primary:hover {
+          background-color: #008000;
+          border-color: #008000;
         }
         .image-container {
           text-align: center;
