@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
         h1 {
           text-align: center;
           margin-top: 50px;
-          color: #3b5998;
+          color: #ffa500;
           font-size: 48px;
           font-weight: bold;
         }
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         label {
-          color: #3b5998;
+          color: #ffa500;
           font-weight: bold;
         }
         input {
@@ -47,16 +47,16 @@ app.get('/', (req, res) => {
           margin-bottom: 20px;
         }
         .btn-primary {
-          background-color: #3b5998;
-          border-color: #3b5998;
+          background-color: #ffa500;
+          border-color: #ffa500;
           border-radius: 10px;
           font-weight: bold;
           width: 100%;
           margin-top: 20px;
         }
         .btn-primary:hover {
-          background-color: #2d4373;
-          border-color: #2d4373;
+          background-color: #008000;
+          border-color: #008000;
         }
         .image-container {
           text-align: center;
