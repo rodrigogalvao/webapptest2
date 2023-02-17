@@ -11,7 +11,7 @@ pipeline {
     
         
         stage('Build') {
-          when { anyOf { branch 'DevAMcom'; branch 'HomAMcom'; branch "PrdAMcom"; } }
+          when { anyOf { branch 'desenvolvimento'; branch 'homolog'; branch "prod"; } }
           steps {
             script{                               
                     dir("node-project") {
@@ -24,7 +24,7 @@ pipeline {
             
        
         stage('Deploy'){
-            when { anyOf { branch 'DevAMcom'; branch 'HomAMcom'; branch "PrdAMcom"; } } 
+            when { anyOf { branch 'desenv'; branch 'homolog'; branch "prod"; } } 
                 steps {
             script{ 
                  sh "kubectl rollout restart deployment/deploy-portalapp -n ${env.namespace}" 
