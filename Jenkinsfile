@@ -27,7 +27,7 @@ pipeline {
             when { anyOf { branch 'desenvolvimento'; branch 'homolog'; branch "prod"; } } 
                 steps {
             script{ 
-                 sh "kubectl rollout restart deployment/deploy-portalapp -n ${env.namespace}" 
+                 sh "microk8s kubectl rollout restart deployment/deploy-portalapp -n ${env.namespace}" 
             }
           }
         } 
