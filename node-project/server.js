@@ -8,7 +8,7 @@ const client = redis.createClient({
   port: 6379
 });
 app.use(bodyParser.urlencoded({ extended: true }));
-
+#version 2
 app.get('/', (req, res) => {
   res.send(`
   <!DOCTYPE html>
