@@ -98,7 +98,7 @@ app.post('/', (req, res) => {
       return res.send('Ocorreu um erro ao armazenar os dados.');
     }
     console.log(`Nome ${nome} ${sobrenome} armazenado com sucesso.`);
-    res.send('Dados armazenados com sucesso!!!!!!!!!!!!!');
+    res.send('Dados armazenados com sucesso!');
   });
 });
 
