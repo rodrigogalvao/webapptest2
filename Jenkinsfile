@@ -24,7 +24,7 @@ pipeline {
             
        
         stage('Deploy') {
-    when { anyOf { branch 'DevAMcom'; branch 'HomAMcom'; branch "PrdAMcom"; } } 
+    when { anyOf { branch 'desenvolvimento'; branch 'homolog'; branch "prod";; } } 
     steps {
         input "Efetuar o deploy para ${env.BRANCH_NAME}? (Requer Aprovação)"
         script {
