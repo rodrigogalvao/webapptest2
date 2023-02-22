@@ -13,8 +13,32 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.send(`
   
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Formulário</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <style>
+        body {
+          background-color: #f2f2f2;
+        }
+        h1 {
+          text-align: center;
+          margin-top: 50px;
+          color: #3b5998;
+          font-size: 48px;
+          font-weight: bold;
+        }
+        .container {
+          max-width: 600px;
+          margin: 0 auto;
+          background-color: #ffffff;
+          padding: 50px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         label {
-          color: #ffa500;
+          color: #3b5998;
           font-weight: bold;
         }
         input {
@@ -25,16 +49,16 @@ app.get('/', (req, res) => {
           margin-bottom: 20px;
         }
         .btn-primary {
-          background-color: #ffa500;
-          border-color: #ffa500;
+          background-color: #3b5998;
+          border-color: #3b5998;
           border-radius: 10px;
           font-weight: bold;
           width: 100%;
           margin-top: 20px;
         }
         .btn-primary:hover {
-          background-color: #008000;
-          border-color: #008000;
+          background-color: #2d4373;
+          border-color: #2d4373;
         }
         .image-container {
           text-align: center;
