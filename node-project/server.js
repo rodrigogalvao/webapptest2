@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   <!DOCTYPE html>
   <html>
     <head>
-      <title>Formulário - version 1.0</title>
+      <title>Formulário - version 2.0</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <style>
         body {
