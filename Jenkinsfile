@@ -23,13 +23,14 @@ pipeline {
         }
             
        
-        stage('Deploy'){
-            when { anyOf { branch 'desenvolvimento'; branch 'homolog'; branch "prod"; } } 
-                steps {
-            script{ 
-                 sh "microk8s kubectl rollout restart deployment/deploy-portalapp -n ${env.namespace}" 
-            }
-          }
-        } 
+        stage('Deploy') {
+    when { anyOf { branch 'DevAMcom'; branch 'HomAMcom'; branch "PrdAMcom"; } } 
+    steps {
+        input "Efetuar Deploy para ${env.BRANCH_NAME}? (Requer Aprovação)"
+        script {
+            sh "kubectl rollout restart deployment/deploy-portalapp -n ${env.namespace}"
+        }
+    }
+}
       }
 }
